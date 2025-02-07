@@ -64,8 +64,8 @@ public class LTLayout: NSObject {
     @objc public lazy var titleMargin: CGFloat = 30.0
     
     /** 距离最左边和最右边的距离 **/
-    @objc public lazy var lrMargin: CGFloat = 10.0
-    
+    @objc public lazy var lMargin: CGFloat = 10.0
+    @objc public lazy var rMargin: CGFloat = 10.0
     /** 滑动过程中是否放大标题 **/
     @objc public lazy var isNeedScale: Bool = true
     

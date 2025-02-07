@@ -106,7 +106,7 @@
 		2569415C884895A0A5CDF411DBDA431E /* Pods-OCExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCExample.modulemap"; sourceTree = "<group>"; };
 		268691D257D6B5E672997DEEB129CE9C /* LTFollowMoveView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LTFollowMoveView.swift; sourceTree = "<group>"; };
 		2B894680165B8E5656A03136EF679DB2 /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
-		2F97F3B7A006C0CFB5CF290FA69B2671 /* Pods-OCExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OCExample"; path = Pods_OCExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F97F3B7A006C0CFB5CF290FA69B2671 /* Pods_OCExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3189CC0748B2B0A9DC70CFF8D0AAD9E8 /* LTVCExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LTVCExtension.swift; sourceTree = "<group>"; };
 		332C5D8DC01E009D9670D4661B33909E /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
 		36BB9355E6802442B875B4EF2995FC78 /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackGifFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
@@ -164,13 +164,13 @@
 		CECB8AB9ADA9D1D685BD7C71CD227C78 /* MJRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/Base/MJRefreshHeader.h; sourceTree = "<group>"; };
 		D146D6031104574223A6A0E0B856CD64 /* LTScrollView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LTScrollView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D32B90A74E49ADCF137DC13C372B94FE /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/Base/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
-		D7BB05364E5C2D62F6696B0FCD043F35 /* LTScrollView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LTScrollView; path = LTScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7BB05364E5C2D62F6696B0FCD043F35 /* LTScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LTScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D961AF35E45E7F555287E56F2550CBDD /* LTTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LTTableView.swift; sourceTree = "<group>"; };
 		DAC9A714CD3178A5D490A89DCAC9AF44 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		DB06A3552E53990568AB5FE417DFE715 /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
 		DE79D25FD0237C2A34086390AEF2D028 /* LTAdvancedManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LTAdvancedManager.swift; sourceTree = "<group>"; };
 		E355B8C9AA556879936BA786464E3A78 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshStateHeader.m; path = MJRefresh/Custom/Header/MJRefreshStateHeader.m; sourceTree = "<group>"; };
-		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABF7660F8A553070A3E9097FB905661 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EC88ADD87EC6CA0E24116A031F252A41 /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MJRefresh.m"; path = "MJRefresh/NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
 		F0B8D223E389ACCBFBDA4F5A88E46574 /* LTScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTScrollView-prefix.pch"; sourceTree = "<group>"; };
@@ -308,9 +308,9 @@
 		63111A24EF971EDEF824AAEDD53D3355 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7BB05364E5C2D62F6696B0FCD043F35 /* LTScrollView */,
-				E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh */,
-				2F97F3B7A006C0CFB5CF290FA69B2671 /* Pods-OCExample */,
+				D7BB05364E5C2D62F6696B0FCD043F35 /* LTScrollView.framework */,
+				E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */,
+				2F97F3B7A006C0CFB5CF290FA69B2671 /* Pods_OCExample.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -552,7 +552,7 @@
 			);
 			name = "Pods-OCExample";
 			productName = Pods_OCExample;
-			productReference = 2F97F3B7A006C0CFB5CF290FA69B2671 /* Pods-OCExample */;
+			productReference = 2F97F3B7A006C0CFB5CF290FA69B2671 /* Pods_OCExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */ = {
@@ -570,7 +570,7 @@
 			);
 			name = MJRefresh;
 			productName = MJRefresh;
-			productReference = E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh */;
+			productReference = E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		695B40E31D35B2A65C33B9C7D9AB71BB /* LTScrollView */ = {
@@ -588,7 +588,7 @@
 			);
 			name = LTScrollView;
 			productName = LTScrollView;
-			productReference = D7BB05364E5C2D62F6696B0FCD043F35 /* LTScrollView */;
+			productReference = D7BB05364E5C2D62F6696B0FCD043F35 /* LTScrollView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */

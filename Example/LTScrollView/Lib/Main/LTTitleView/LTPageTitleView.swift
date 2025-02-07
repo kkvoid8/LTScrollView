@@ -91,7 +91,7 @@ public typealias LTItemViewClassHandle = () -> LTPageTitleItemType
     }()
     
     private lazy var sliderLineView: UIView = {
-        let sliderLineView = UIView(frame: CGRect(x: layout.lrMargin, y: bounds.height - layout.bottomLineHeight - layout.pageBottomLineHeight, width: 0, height: layout.bottomLineHeight))
+        let sliderLineView = UIView(frame: CGRect(x: layout.lMargin, y: bounds.height - layout.bottomLineHeight - layout.pageBottomLineHeight, width: 0, height: layout.bottomLineHeight))
         sliderLineView.backgroundColor = layout.bottomLineColor
         sliderLineView.isHidden = layout.isHiddenSlider
         return sliderLineView
@@ -139,7 +139,7 @@ extension LTPageTitleView {
         // 将所有的宽度计算出来放入数组
         for text in titles {
             if layout.isAverage {
-                let textAverageW = (glt_width - layout.lrMargin * 2.0 - layout.titleMargin * CGFloat(titles.count - 1)) / CGFloat(titles.count)
+                let textAverageW = (glt_width - layout.lMargin - layout.rMargin - layout.titleMargin * CGFloat(titles.count - 1)) / CGFloat(titles.count)
                 if !_isLayoutWidth {
                     glt_textWidths.append(textAverageW)
                 }
@@ -165,7 +165,7 @@ extension LTPageTitleView {
         }
         
         // 按钮布局
-        var upX: CGFloat = layout.lrMargin
+        var upX: CGFloat = layout.lMargin
         let subH = glt_height - layout.bottomLineHeight
         for index in 0..<titles.count {
             let subW = glt_textWidths[index]
@@ -192,14 +192,14 @@ extension LTPageTitleView {
         if layout.sliderWidth == glt_sliderDefaultWidth {
             if layout.isAverage {
                 sliderLineView.glt_width = firstLineWidth
-                sliderLineView.glt_left = (firstTextWidth - firstLineWidth) * 0.5 + layout.lrMargin
+                sliderLineView.glt_left = (firstTextWidth - firstLineWidth) * 0.5 + layout.lMargin// !
             }else {
                 sliderLineView.glt_width = firstButton.glt_width
                 sliderLineView.glt_left = firstButton.glt_left
             }
         }else {
             sliderLineView.glt_width = layout.sliderWidth
-            sliderLineView.glt_left = ((firstTextWidth + layout.lrMargin * 2) - layout.sliderWidth) * 0.5
+            sliderLineView.glt_left = ((firstTextWidth + layout.lMargin + layout.lMargin) - layout.sliderWidth) * 0.5
         }
         
         if layout.bottomLineCornerRadius != 0.0 {
@@ -214,7 +214,7 @@ extension LTPageTitleView {
         }
         
         // 计算sliderScrollView的contentSize
-        let sliderContenSizeW = upX - layout.titleMargin + layout.lrMargin
+        let sliderContenSizeW = upX - layout.titleMargin + layout.rMargin
         
         if sliderContenSizeW < glt_width {
             sliderScrollView.glt_width = sliderContenSizeW
@@ -270,7 +270,7 @@ extension LTPageTitleView {
         // 将所有的宽度计算出来放入数组
         for text in titles {
             if layout.isAverage {
-                let textAverageW = (glt_width - layout.lrMargin * 2.0 - layout.titleMargin * CGFloat(titles.count - 1)) / CGFloat(titles.count)
+                let textAverageW = (glt_width - layout.lMargin - layout.rMargin - layout.titleMargin * CGFloat(titles.count - 1)) / CGFloat(titles.count)
                 if !_isLayoutWidth {
                     glt_textWidths.append(textAverageW)
                 }
@@ -296,7 +296,7 @@ extension LTPageTitleView {
         }
         
         // 按钮布局
-        var upX: CGFloat = layout.lrMargin
+        var upX: CGFloat = layout.lMargin
         let subH = glt_height - layout.bottomLineHeight
         for index in 0..<titles.count {
             let subW = glt_textWidths[index]
@@ -326,14 +326,14 @@ extension LTPageTitleView {
         if layout.sliderWidth == glt_sliderDefaultWidth {
             if layout.isAverage {
                 sliderLineView.glt_width = firstLineWidth
-                sliderLineView.glt_left = (firstTextWidth - firstLineWidth) * 0.5 + layout.lrMargin
+                sliderLineView.glt_left = (firstTextWidth - firstLineWidth) * 0.5 + layout.lMargin
             }else {
                 sliderLineView.glt_width = firstButton.glt_width
                 sliderLineView.glt_left = firstButton.glt_left
             }
         }else {
             sliderLineView.glt_width = layout.sliderWidth
-            sliderLineView.glt_left = ((firstTextWidth + layout.lrMargin * 2) - layout.sliderWidth) * 0.5
+            sliderLineView.glt_left = ((firstTextWidth + layout.lMargin + layout.rMargin) - layout.sliderWidth) * 0.5
         }
         
         if layout.bottomLineCornerRadius != 0.0 {
@@ -348,7 +348,7 @@ extension LTPageTitleView {
         }
         
         // 计算sliderScrollView的contentSize
-        let sliderContenSizeW = upX - layout.titleMargin + layout.lrMargin
+        let sliderContenSizeW = upX - layout.titleMargin + layout.rMargin
         
         if sliderContenSizeW < glt_width {
             sliderScrollView.glt_width = sliderContenSizeW
@@ -522,7 +522,7 @@ extension LTPageTitleView {
         if offsetX + scrollW >= scrollContenSizeW {
             if layout.sliderWidth == glt_sliderDefaultWidth {
                 let adjustX = (glt_textWidths.last! - glt_lineWidths.last!) * 0.5
-                sliderLineView.frame.origin.x = layout.lrMargin + adjustX
+                sliderLineView.frame.origin.x = layout.lMargin + adjustX
             }else {
                 setupSliderLineViewWidth(currentButton: glt_buttons.last!)
             }
@@ -532,9 +532,9 @@ extension LTPageTitleView {
         if offsetX <= 0 {
             if layout.sliderWidth == glt_sliderDefaultWidth {
                 let adjustX = (glt_textWidths[0] - glt_lineWidths[0]) * 0.5
-                sliderLineView.frame.origin.x = layout.lrMargin + adjustX
+                sliderLineView.frame.origin.x = layout.lMargin + adjustX
             }else {
-                sliderLineView.frame.origin.x = ((glt_textWidths[0] + layout.lrMargin * 2) - layout.sliderWidth) * 0.5
+                sliderLineView.frame.origin.x = ((glt_textWidths[0] + layout.lMargin + layout.rMargin) - layout.sliderWidth) * 0.5
             }
             offsetX = 0.5
         }
@@ -605,12 +605,12 @@ extension LTPageTitleView {
             /*
              * 原理：按钮的最左边X（因为有lrMargin，这里必须减掉） 以及 按钮的相对右边X（注意不是最右边，因为每个按钮的X都有一个lrMargin， 所以相对右边则有两个才能保证按钮的位置，这个和titleMargin无关）
              */
-            let maxNextLeft = nextButton.frame.origin.x - layout.lrMargin
-            let maxNextRight = maxNextLeft + layout.lrMargin * 2.0 + nextButton.frame.size.width
+            let maxNextLeft = nextButton.frame.origin.x - layout.lMargin
+            let maxNextRight = maxNextLeft + layout.lMargin + layout.rMargin + nextButton.frame.size.width
             let originNextX = (maxNextRight - maxNextLeft - layout.sliderWidth) * 0.5 + maxNextLeft
             
-            let maxLeft = currentButton.frame.origin.x - layout.lrMargin
-            let maxRight = maxLeft + layout.lrMargin * 2.0 + currentButton.frame.size.width
+            let maxLeft = currentButton.frame.origin.x - layout.rMargin
+            let maxRight = maxLeft + layout.lMargin + layout.rMargin + currentButton.frame.size.width
             let originX = (maxRight - maxLeft - layout.sliderWidth) * 0.5 + maxLeft
             
             let moveX = originNextX - originX
@@ -625,8 +625,8 @@ extension LTPageTitleView {
     
     // currentButton将要滚动到的按钮
     private func setupSliderLineViewWidth(currentButton: UIButton)  {
-        let maxLeft = currentButton.frame.origin.x - layout.lrMargin
-        let maxRight = maxLeft + layout.lrMargin * 2 + currentButton.frame.size.width
+        let maxLeft = currentButton.frame.origin.x - layout.lMargin
+        let maxRight = maxLeft + layout.lMargin + layout.lMargin + currentButton.frame.size.width
         let originX = (maxRight - maxLeft - layout.sliderWidth) * 0.5  + maxLeft
         sliderLineView.frame.origin.x = originX
         sliderLineView.frame.size.width = layout.sliderWidth

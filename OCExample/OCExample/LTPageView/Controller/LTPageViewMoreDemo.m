@@ -94,7 +94,8 @@
     layout.titleMargin = 10;
     // （屏幕宽度 - 标题总宽度 - 标题间距宽度） / 2 = 最左边以及最右边剩余
     CGFloat lrMargin = (self.view.bounds.size.width - titles.count * layout.sliderWidth + (titles.count - 1) * layout.titleMargin) * 0.5;
-    layout.lrMargin = lrMargin;
+    layout.lMargin = lrMargin;
+    layout.rMargin = lrMargin;
     layout.isAverage = YES;
     NSMutableArray *viewControllers = [NSMutableArray array];
     [titles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -115,7 +116,8 @@
     NSArray *titles = @[@"添加背景图片", @"自定义badge", @"我是富文本", @"修改位置", @"更多样式"];
     LTLayout *layout = [LTLayout new];
     layout.titleMargin = 15;
-    layout.lrMargin = 15;
+    layout.lMargin = 40;
+    layout.rMargin = 100;
     layout.titleFont = [UIFont systemFontOfSize:14];
     layout.isNeedScale = YES;
     

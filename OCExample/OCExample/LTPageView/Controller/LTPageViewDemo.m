@@ -66,7 +66,8 @@
         _layout = [[LTLayout alloc] init];
         _layout.sliderWidth = 40;
         _layout.titleMargin = 20.0;
-        _layout.lrMargin = 20;
+        _layout.lMargin = 40;
+        _layout.rMargin = 100;
     }
     return _layout;
 }

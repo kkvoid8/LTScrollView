@@ -120,7 +120,8 @@
         _layout = [[LTLayout alloc] init];
         _layout.bottomLineHeight = 4.0;
         _layout.bottomLineCornerRadius = 2.0;
-        _layout.lrMargin = 30;
+        _layout.lMargin = 40;
+        _layout.rMargin = 100;
         _layout.titleFont = [UIFont systemFontOfSize:12];
         /* 更多属性设置请参考 LTLayout 中 public 属性说明 */
     }

@@ -45,7 +45,7 @@ public class LTAdvancedManager: UIView {
     private var layout: LTLayout
     private var selectIndex = 0
     
-    private var titleView: LTPageTitleView!
+    public var titleView: LTPageTitleView!
     private var itemViewClass: LTPageTitleItemType.Type?
     
     @objc public init(frame: CGRect, viewControllers: [UIViewController], titles: [String], currentViewController:UIViewController, layout: LTLayout, titleView: LTPageTitleView? = nil, itemViewClass: LTPageTitleItemType.Type? = nil, headerViewHandle handle: () -> UIView) {

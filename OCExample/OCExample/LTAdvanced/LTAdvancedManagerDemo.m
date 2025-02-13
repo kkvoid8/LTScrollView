@@ -86,8 +86,12 @@
 -(LTLayout *)layout {
     if (!_layout) {
         _layout = [[LTLayout alloc] init];
-        _layout.isAverage = YES;
-        _layout.sliderWidth = 20;
+        _layout.sliderWidth = 16;
+        _layout.sliderHeight = 40;
+        _layout.titleMargin = 20;
+        _layout.lMargin = 12;
+        _layout.rMargin = 60 + 12;
+        _layout.scale = 1.05;
         /* 更多属性设置请参考 LTLayout 中 public 属性说明 */
     }
     return _layout;
